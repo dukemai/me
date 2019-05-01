@@ -1,0 +1,247 @@
+{
+  "skills": [
+    {
+      "id": "nodejs",
+      "title": "Nodejs",
+      "description": "Couple with Express to provide flexibility development with React",
+      "content": "Flexibly and widely adopting latest libraries to quickly build up applications based on Express."
+    },
+    {
+      "id": "react",
+      "title": "React",
+      "description": "In conjunction with Redux and other front techniques to develop complexed apps",
+      "content": "Effectivly use in conjunction with Redux, Axios, .. to develop consisten, responsive and highly complexed applications"
+    },
+    {
+      "id": "TDD",
+      "title": "TDD using jest, mocha, cypress",
+      "description": "",
+      "content": ""
+    },
+    {
+      "id": "net",
+      "title": ".Net Development",
+      "description": "In conjunction with CMSes such as Episerver to build up sustainbility websites",
+      "content": "Solid experience with high quality demanded websites and abilities to provide high performance solution to Episerver websites"
+    },
+    {
+      "id": "docker",
+      "title": "Docker",
+      "description": "A neat solution facilitate development and deployment environments",
+      "content": "Experienced to setup with docker-compose for quickly setting up development dependencies"
+    },
+    {
+      "id": "scrum",
+      "title": "Scrum",
+      "description": "Adopting agile method for fast response projects",
+      "content": "Deeply understanding and agile minded"
+    },
+    {
+      "id": "performance",
+      "title": "Performance optimization",
+      "description": "Performance is always a top most thing to achieve",
+      "content": "Widely uses of performance benchmark tools and technique like performance tests, webpagetest, Light house"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "Full-stack-js-developer",
+      "title": "Full stack js developer",
+      "description": "I have been working as full stack js developer since 2017 with focus on Nodejs and React",
+      "list": [
+        "Develop UI with React, Redux",
+        "Develop backend with Nodejs, MongoDB"
+      ]
+    },
+    {
+      "id": "test-driven-development",
+      "title": "Test driven development",
+      "description": "I have been working as full stack js developer since 2017 with focus on Nodejs and React",
+      "list": [
+        "Develop UI with React, Redux",
+        "Develop backend with Nodejs, MongoDB"
+      ]
+    },
+    {
+      "id": "project-manager",
+      "title": "Project manager",
+      "description": "I have worked as project manager in 3 years. I led a team to develop and maintain a large complexed episerver site",
+      "list": [
+        "Plan timeline, resources for projects",
+        "Involve to technical solutions for projects"
+      ]
+    },
+    {
+      "id": "scrum-master",
+      "title": "Scrum master",
+      "description": "I got my scrum master certificate in 2015. As a certified scrum master I contributed to the team by observering during projects implementation, giving advices, trying to remove impediments"
+    },
+    {
+      "id": "Full-stack-net-developer",
+      "title": "Full stack .Net developer",
+      "description": "I am a certified Episerver developer for CMS 6, 7 and 10. I have been worked as full stack js developer since 2011 untils I changed my focus to js. Most of the time I worked deeply with Episerver CMS to develop a highly advanced and flexible CMS and also a performant epi site.",
+      "list": [
+        "Develop Episerver site including CMS custom properties",
+        "Optimize performance for backend",
+        "Optimize performance for UI using Chrome devtools, Webpagetest..."
+      ]
+    }
+  ],
+  "aboutme": {
+    "id": "about-me",
+    "content": [
+      "A full stack js developer with background as .Net developer specialized in Episerver",
+      "A developer who loves challenges, beautiful code and sometimes thinks too much complicated",
+      "A normal guy cares about climate changes and environments",
+      "I speak English, Swedish and Vietnamese"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Bonnier Editors Tools",
+      "year": "2018 - now",
+      "responsibility": "Fullstack developer",
+      "description": "Produce highly crafted tools for the uses of complexed editors businesses which can be sharing, organizing front page",
+      "stacks": [
+        "React",
+        "Nodejs",
+        "MongoDB",
+        "Redux",
+        "Docker",
+        "Stylus",
+        "Webpack",
+        "Electron"
+      ]
+    },
+    {
+      "name": "Bonnier Safe Share",
+      "year": "2018",
+      "responsibility": "Fullstack developer",
+      "description": "Highly secured application for sharing files",
+      "stacks": [
+        "React",
+        "Nodejs",
+        "MongoDB",
+        "Redux",
+        "Docker",
+        "Stylus",
+        "Kue",
+        "Passport",
+        "Jwt",
+        "Webpack"
+      ]
+    },
+    {
+      "name": "Di Börssnack",
+      "year": "2017",
+      "responsibility": "Project manager",
+      "description": "Manage plan and lead re-archiecturing börssnack site to use React",
+      "stacks": [
+        "React",
+        "Nodejs",
+        "Redux",
+        ".Net",
+        "Solr",
+        "Planning",
+        "Scrum"
+      ]
+    },
+    {
+      "name": "Bonnier CMS",
+      "year": "2017 - now",
+      "responsibility": "Project manager",
+      "description": "Maintain and developer Episerver CMS for large publications DN and DI",
+      "stacks": [
+        "Episerver CMS",
+        "AngularJS",
+        "Jira",
+        "Octopus",
+        "Teamcity",
+        "Solr",
+        "Planning",
+        "Scrum",
+        "SQL"
+      ]
+    },
+    {
+      "name": "Hosting movements",
+      "year": "2016",
+      "responsibility": "Project manager",
+      "description": "Moving hosting providers",
+      "stacks": ["Planning", "Linux scripting"]
+    },
+    {
+      "name": "Dagens Industri",
+      "year": "2016 - 2017",
+      "responsibility": "Project manager",
+      "description": "Development for large news site www.di.se",
+      "stacks": [
+        "Episerver CMS",
+        "AngularJS",
+        "Jira",
+        "Octopus",
+        "Teamcity",
+        "Solr",
+        "Performance Optimizations",
+        "Webpagetest",
+        "Analyze stack dump",
+        "Load test",
+        "Scrum",
+        "SQL",
+        ".Net 3.5",
+        "jQuery"
+      ]
+    },
+    {
+      "name": "Dagens Nyheter",
+      "year": "2015 - 2017",
+      "responsibility": "Team lead/Project manager",
+      "description": "Development for large news site www.dn.se",
+      "stacks": [
+        "Episerver CMS",
+        "AngularJS",
+        "Jira",
+        "Octopus",
+        "Teamcity",
+        "Solr",
+        "Performance Optimizations",
+        "Webpagetest",
+        "Analyze stack dump",
+        "Load test",
+        "Scrum",
+        "SQL",
+        ".Net 3.5",
+        "jQuery"
+      ]
+    },
+    {
+      "name": "Dagens Nyheter",
+      "year": "2012 - 2015",
+      "responsibility": "Senior developer",
+      "description": "Development for large news site www.dn.se",
+      "stacks": [
+        "Episerver CMS",
+        "AngularJS",
+        "Jira",
+        "Octopus",
+        "Teamcity",
+        "Solr",
+        "Performance Optimizations",
+        "Webpagetest",
+        "Analyze stack dump",
+        "Load test",
+        "Scrum",
+        "SQL",
+        ".Net 3.5",
+        "jQuery"
+      ]
+    },
+    {
+      "name": "Spinifex",
+      "year": "2011 - 2012",
+      "responsibility": "Developer",
+      "description": "Episerver development as customers' requests",
+      "stacks": ["Episerver CMS", "jQuery", ".Net 3.5"]
+    }
+  ]
+}

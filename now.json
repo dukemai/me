@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "name": "me",
+    "builds": [
+      { "src": "package.json", "use": "@now/next" },
+      { "src": "*.txt", "use": "@now/static" }
+    ]
+  }
+  
