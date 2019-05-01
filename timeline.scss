@@ -85,8 +85,9 @@ $timeline-item-card-radius: $global-radius;
       text-align: right;
       transition: $timeline-transition;
       width: 45%;
-    
-      h5, h6 {
+
+      h5,
+      h6 {
         color: $timeline-item-font-color;
       }
       @if $timeline-item-card == true {
@@ -130,34 +131,3 @@ $timeline-item-card-radius: $global-radius;
   }
 }
 
-@include breakpoint(small only) {
-  .timeline {
-    margin: 30px;
-    padding: 0;
-    width: 90%;
-
-    &::before {
-      left: 0;
-    }
-
-    .timeline-item {
-      .timeline-content {
-        float: right;
-        text-align: left;
-        width: 90%;
-
-        &::before,
-        &.right::before {
-          border-left: 0;
-          border-right: 7px solid $timeline-color;
-          left: 10%;
-          margin-left: -6px;
-        }
-      }
-
-      .timeline-icon {
-        left: 0;
-      }
-    }
-  }
-}
