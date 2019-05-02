@@ -243,5 +243,10 @@
       "description": "Episerver development as customers' requests",
       "stacks": ["Episerver CMS", "jQuery", ".Net 3.5"]
     }
-  ]
+  ],
+  "freeThings": [{
+    "name": "Time Machine",
+    "link": "https://time-machine.se",
+    "description": "Free app shows information about week number, weather in Stockholm"
+  }]
 }

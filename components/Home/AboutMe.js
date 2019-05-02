@@ -12,7 +12,7 @@ const AboutMe = ({}) => (
     ))}
 
     <div className="portfolio-resume-contact-info">
-      <h5>Connect with me</h5>
+      <h5>Me on social networks</h5>
       <a
         className="portfolio__link"
         href="https://www.linkedin.com/in/duc-mai-96b0846b/"
@@ -28,6 +28,19 @@ const AboutMe = ({}) => (
         <i className="fa fi-social-stack-overflow" aria-hidden="true" />
         Stackoverflow
       </a>
+    </div>
+    <div className="portfolio-resume-contact-info">
+      <h5>Free things by me</h5>
+      <ul>
+        {me.freeThings.map(thing => (
+          <li key={thing.name}>
+            <a target="_blank" href={thing.link}>
+              {thing.name}
+            </a>
+            <p>{thing.description}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   </div>
 );

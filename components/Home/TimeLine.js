@@ -36,7 +36,7 @@ const TimeLine = ({}) => (
               <p>{project.description}</p>
               <p>
                 {project.stacks.map(stack => (
-                  <span key={stack} class="label secondary">
+                  <span key={stack} className="label secondary">
                     {stack}
                   </span>
                 ))}
