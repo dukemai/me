@@ -6,6 +6,7 @@
 @include foundation-everything;
 @import './timeline.scss';
 @import './portfolio.scss';
+@import './memory-game.scss';
 
 @include breakpoint(small only) {
   .portfolio-resume-wrapper {
@@ -14,8 +15,8 @@
 
   .portfolio-resume-wrapper--timeline {
     padding: 0;
-    .portfolio-resume-header{
-      padding-left: 2rem
+    .portfolio-resume-header {
+      padding-left: 2rem;
     }
   }
 
@@ -47,5 +48,25 @@
         left: 0;
       }
     }
+  }
+}
+
+.container {
+  max-width: 890px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 5rem;
+
+  & > div {
+    width: 100px;
+    height: 100px;
+    background: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
   }
 }
