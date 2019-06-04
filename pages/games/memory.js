@@ -6,7 +6,8 @@ import fetch from 'node-fetch';
 import { shuffle } from 'lodash/fp';
 
 import Flipper from '../../components/Memory/Flipper';
-import Header from '../../components/Memory/Header';
+import Side from '../../components/Memory/Side';
+import FinishModal from '../../components/Memory/FinishModal';
 
 const getResizedImage = raw => `${raw}&w=250&h=250&fit=crop`;
 
@@ -25,6 +26,8 @@ const DEFAULT_CELLS = grid.map((cell, id) => ({
   id,
 }));
 
+const DEFAULT_CAT = 'Cats';
+
 const standardizeId = index => Math.floor(index / 2) * 2;
 
 const getOpenCells = cells => cells.filter(c => c.isOpen && !c.isMatched);
@@ -38,11 +41,14 @@ const isOpenCellsMatched = cells => {
 };
 const Memory = ({}) => {
   const [cells, setCells] = useState(DEFAULT_CELLS);
+  const [cat, setCat] = useState(DEFAULT_CAT);
+  const [startTime, setStartTime] = useState(null);
+  const [showFinish, setShowFinish] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`/api/images?take=${imagesCount}`)
+    fetch(`/api/images?take=${imagesCount}&q=${cat}`)
       .then(res => res.json())
       .then(json => {
         setIsLoading(false);
@@ -57,15 +63,32 @@ const Memory = ({}) => {
         }));
         setCells(shuffle(updateCells));
       });
-  }, []);
+  }, [cat]);
+  const resetGames = () => {
+    const updateCells = cells.map(c => ({
+      ...c,
+      isMatched: false,
+      isOpen: false,
+    }));
+    setCells(shuffle(updateCells));
+    setShowFinish(false);
+    setStartTime(null);
+  };
   const onFlipping = id => e => {
+    if (!startTime) {
+      setStartTime(new Date());
+    }
     const openCells = getOpenCells(cells);
     const openCount = openCells.length;
 
     if (openCount >= 2) {
       return;
     }
+
     const cell = cells.find(i => i.id === id);
+    if (cell.isMatched) {
+      return;
+    }
     cell.isOpen = !cell.isOpen;
 
     if (isOpenCellsMatched(cells)) {
@@ -75,13 +98,7 @@ const Memory = ({}) => {
       });
       if (getMatchedCells(cells).length == cells.length) {
         setTimeout(() => {
-          confirm('Yay you are done!');
-          const updateCells = cells.map(c => ({
-            ...c,
-            isMatched: false,
-            isOpen: false,
-          }));
-          setCells(shuffle(updateCells));
+          setShowFinish(true);
         }, 500);
       }
     } else if (openCount + 1 === 2) {
@@ -94,14 +111,30 @@ const Memory = ({}) => {
 
     setCells([...cells]);
   };
+  const onCatChange = e => {
+    setCat(e.target.value);
+    resetGames();
+  };
+  const onPlayAgainClicked = () => {
+    resetGames();
+  };
   return (
-    <>
-      <Header points={getMatchedCells(cells).length} />
-      <section className="grid grid-x grid-padding-x game--content">
+    <section className="grid-x">
+      <Side
+        selectedCat={cat}
+        points={getMatchedCells(cells).length}
+        onChange={onCatChange}
+        startTime={startTime}
+        showFinish={showFinish}
+      />
+      <section className="cell medium-10 grid grid-x grid-padding-x game--content">
         <div
-          className={classnames('cell cell--overlay reveal-overlay', {
-            'cell--visible': isLoading,
-          })}
+          className={classnames(
+            'cell cell--overlay reveal-overlay align-middle align-center',
+            {
+              'cell--visible': isLoading,
+            }
+          )}
         >
           <p>Loading...</p>
         </div>
@@ -126,7 +159,13 @@ const Memory = ({}) => {
           </div>
         ))}
       </section>
-    </>
+      {showFinish && (
+        <FinishModal
+          points={getMatchedCells(cells).length}
+          onPlayAgainClicked={onPlayAgainClicked}
+        />
+      )}
+    </section>
   );
 };
 Memory.propTypes = propTypes;

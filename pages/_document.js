@@ -11,6 +11,10 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="description"
+            content="Duc Mai full stack developer. #react, #nodejs developer. #memory game cat"
+          />
         </Head>
         <body>
           <Main />
@@ -19,9 +23,7 @@ export default class MyDocument extends Document {
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-139405410-1"
           />
-          <script
-            src="/static/analytics.js"
-          />
+          <script src="/static/analytics.js" />
         </body>
       </html>
     );

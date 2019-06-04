@@ -13,9 +13,9 @@ const getResizedImage = raw => `${raw}&w=250&h=250&fit=crop`;
 module.exports = server => {
   server.get('/api/images', async (req, res, next) => {
     try {
-      const { take } = req.query;
+      const { take, q } = req.query;
       const images = await unsplash.search
-        .photos('animals', take || 10)
+        .photos((q || '').toLowerCase(), take || 10)
         .then(res => res.json());
 
       res.json(images);

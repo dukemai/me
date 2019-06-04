@@ -244,9 +244,21 @@
       "stacks": ["Episerver CMS", "jQuery", ".Net 3.5"]
     }
   ],
-  "freeThings": [{
-    "name": "Time Machine",
-    "link": "https://time-machine.se",
-    "description": "Free app shows information about week number, weather in Stockholm"
-  }]
+  "freeThings": [
+    {
+      "name": "Time Machine",
+      "link": "https://time-machine.se",
+      "description": "Free app shows information about week number, weather in Stockholm"
+    },
+    {
+      "name": "Memory game",
+      "link": "/games/memory",
+      "description": "Classic memory game"
+    },
+    {
+      "name": "Step in sweden",
+      "link": "https://step-in-sweden.ducmai.now.sh",
+      "description": "An on-going work for a site that helps people new to Sweden"
+    }
+  ]
 }

@@ -12,6 +12,18 @@ const Header = ({ points = 0 }) => (
     <div className="top-bar-right">
       <ul className="menu">
         <li>
+          <label>
+            Images:
+            <select id="select" required>
+              <option value="" />
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+          </label>
+        </li>
+        <li>
           <span>{points} points</span>
         </li>
       </ul>
