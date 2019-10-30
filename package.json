@@ -24,7 +24,7 @@
     "express": "^4.16.4",
     "foundation-sites": "^6.5.3",
     "helmet": "^3.18.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "next": "^8.1.0",
     "node-fetch": "^2.5.0",
     "node-sass": "^4.12.0",
