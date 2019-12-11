@@ -21,16 +21,21 @@
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
     "classnames": "^2.2.6",
-    "express": "^4.16.4",
-    "foundation-sites": "^6.5.3",
-    "helmet": "^3.18.0",
+    "express": "^4.17.1",
+    "foundation-sites": "^6.6.0",
+    "helmet": "^3.21.2",
     "lodash": "^4.17.11",
-    "next": "^8.1.0",
-    "node-fetch": "^2.5.0",
-    "node-sass": "^4.12.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "unsplash-js": "^5.0.0",
-    "whatwg-fetch": "^3.0.0"
+    "next": "^9.1.5",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.13.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "unsplash-js": "^6.0.0",
+    "whatwg-fetch": "^3.0.0",
+    "@mdx-js/loader": "^1.5.1",
+    "@next/mdx": "^9.1.4",
+    "remark-attr": "^0.9.0",
+    "remark-containers": "^1.1.1",
+    "remark-custom-blocks": "^2.4.2"
   }
 }
