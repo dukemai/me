@@ -8,13 +8,25 @@
     },
     {
       "id": "react",
-      "title": "React",
+      "title": "React, Redux",
+      "description": "In conjunction with Redux and other front techniques to develop complexed apps",
+      "content": "Effectivly use in conjunction with Redux, Axios, .. to develop consisten, responsive and highly complexed applications"
+    },
+    {
+      "id": "NextJS",
+      "title": "NextJS",
       "description": "In conjunction with Redux and other front techniques to develop complexed apps",
       "content": "Effectivly use in conjunction with Redux, Axios, .. to develop consisten, responsive and highly complexed applications"
     },
     {
       "id": "TDD",
       "title": "TDD using jest, mocha, cypress",
+      "description": "",
+      "content": ""
+    },
+    {
+      "id": "BDD",
+      "title": "BDD using cucumber jest, cucumber cypress",
       "description": "",
       "content": ""
     },
@@ -259,6 +271,12 @@
       "name": "Step in sweden",
       "link": "https://step-in-sweden.ducmai.now.sh",
       "description": "An on-going work for a site that helps people new to Sweden"
+    }
+  ],
+  "blogs": [
+    {
+      "name": "Blogging with NextJs",
+      "link": "/blogs/blogging-with-nextjs"
     }
   ]
 }

@@ -1,19 +1,21 @@
 .portfolio__link {
     margin-right: 8px;
 }
-$portfolio-resume-spacing: 2rem;
+$portfolio-resume-spacing: 1rem;
 
 .portfolio-resume-spacing {
   margin-bottom: $portfolio-resume-spacing;
 }
 
 .portfolio-resume-wrapper {
-  padding: 2rem 4rem;
+  padding: 1rem 2rem;
 }
 
 .portfolio-resume-headshot {
-  margin-bottom: 2rem;
   border-radius: 50%;
+  width: 75px;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .portfolio-resume-header {

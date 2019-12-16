@@ -7,19 +7,20 @@ import TimeLine from '../components/Home/TimeLine';
 function Home() {
   return (
     <>
+      <Avatar />
+
       <div className="portfolio-resume grid-x">
-        <div className="large-4 columns">
+        <div className="large-3 columns">
           <div className="portfolio-resume-wrapper">
-            <Avatar />
             <Skills />
           </div>
         </div>
 
-        <div className="large-4 columns">
+        <div className="large-6 columns">
           <Experiences />
         </div>
 
-        <div className="large-4 columns">
+        <div className="large-3 columns">
           <AboutMe />
         </div>
       </div>

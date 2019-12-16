@@ -30,6 +30,19 @@ const AboutMe = ({}) => (
       </a>
     </div>
     <div className="portfolio-resume-contact-info">
+      <h5>Blogs I wrote</h5>
+      <ul>
+        {me.blogs.map(thing => (
+          <li key={thing.name}>
+            <a target="_blank" href={thing.link}>
+              {thing.name}
+            </a>
+            <p>{thing.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+    <div className="portfolio-resume-contact-info">
       <h5>Free things by me</h5>
       <ul>
         {me.freeThings.map(thing => (
