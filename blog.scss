@@ -1,0 +1,26 @@
+.blog * {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.blog {
+  & .top-bar,
+  & .top-bar ul {
+    background-color: #2a2e33;
+  }
+  & .top-bar a {
+    color: #fff;
+  }
+  & .top-bar-title {
+    font-size: 34px;
+  }
+  & .main-container {
+    padding-left: 0.56818rem;
+    max-width: 68.18182rem;
+    margin: 0 auto;
+  }
+  & h2 {
+    color: #ff6b00;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
